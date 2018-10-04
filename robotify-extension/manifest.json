@@ -1,0 +1,28 @@
+{
+
+  "manifest_version": 2,
+  "name": "Robotify",
+  "version": "0.1.0",
+
+  "description": "Checks for and previews a site's robots.txt file in a new tab if it exists",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Open robots.txt"
+  },
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "background" : {
+    "scripts" : [ "robotify.js"]
+  },
+
+  "applications": {
+    "gecko": {
+      "id": "robotify@rud.is"
+    }
+  }
+
+}
